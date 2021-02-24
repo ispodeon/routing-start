@@ -28,7 +28,8 @@ export class UserComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    this.paramsSubscription.unsubscribe();
+    this.paramsSubscription.unsubscribe(); // its not necessary but since normally when a compoenent lifecycle ends the subscricption doesnt
+                                           // have to. so its best to unsbuscribe from a subscription in ngOnDestroy()
   }
 
 }
