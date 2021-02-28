@@ -8,10 +8,18 @@
         </div>
     </div>
     <div class="col-xs-12 col-sm-4">
+        <router-outlet></router-outlet>
+        <!-- 
+                                             this is the second router outlet, a nested outlet.
+                                             it corresponds to the nested routes under the server 
+                                             route in the app module
+                                        -->
         <!-- <a routerLink="/servers">Reload Page</a> -->
-        <button class="btn btn-primary" (click)="onReload()">Reload Page</button>
-        <app-edit-server></app-edit-server>
-        <hr>
-        <!-- <app-server></app-server> -->
+        <!--
+            <button class="btn btn-primary" (click)="onReload()">Reload Page</button>
+            <app-edit-server></app-edit-server>
+            <hr>
+            <app-server></app-server> 
+        -->
     </div>
 </div>
