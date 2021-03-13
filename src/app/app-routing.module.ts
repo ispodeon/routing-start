@@ -36,7 +36,8 @@ const appRoutes: Routes = [
 
 @NgModule({
     imports : [
-        RouterModule.forRoot(appRoutes)
+        // RouterModule.forRoot(appRoutes, {useHash: true}) // if you want to account for web server your webpage is hosting on
+        RouterModule.forRoot(appRoutes)    // it will make sure that it doesn't always return 404 not found
     ],
     exports : [RouterModule]
 })
